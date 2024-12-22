@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/whiteblur">
+
+    <EditText
+        android:id="@+id/expenseAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/expenseDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:hint="Enter date (yyyy-mm-dd)"
+        android:inputType="date"
+        tools:ignore="Autofill,HardcodedText" />
+
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="110dp"/>
+    <!--        here the spinner acts as a dropdown list do that the user can select
+    from the give items list-->
+
+
+    <Button
+        android:id="@+id/addExpenseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="20dp"
+        android:text="Add Expense"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:backgroundTint="@color/black"/>
+
+    <ListView
+        android:id="@+id/expenseListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:dividerHeight="1dp"
+        tools:ignore="ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/generateReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="165dp"
+        android:backgroundTint="@color/mycol"
+        android:text="Generate Report"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+</RelativeLayout>
+
+
